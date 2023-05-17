@@ -1,12 +1,10 @@
 <div align="center">
   <h1>Notiolink</h1>
   <p>⚡ Self-hostable branded link shortener built with Next.js & Notion API</p>
-  <p>Made by <a href="https://theodorusclarence.com">Theodorus Clarence</a></p>
+  <p>Made by <a href="https://hirenlalani.netlify.app/">Hiren Lalani</a></p>
 </div>
 
-## Installation Guide
 
-Please read the full guide on [this notion page](https://notiolink.thcl.dev/installation-guide)
 
 If you are migrating from v0 to v1, I suggest to re-fork the project and add the environment variables.
 
@@ -46,11 +44,3 @@ Every category will be made into a standalone tree on `/c/:category` route
 
 ![Category](https://user-images.githubusercontent.com/55318172/152929498-2e44d6a3-5d49-4fbd-9ed3-b2e22aeffbd2.png)
 
-### Themes
-
-Themes you can choose
-
-|     ![Dark](https://user-images.githubusercontent.com/55318172/152929950-690cc890-a1e9-4e71-a12a-402670167081.png) Dark      |   ![Light](https://user-images.githubusercontent.com/55318172/152929946-9a128b27-4bb3-433c-a7ec-14b19d8a9729.png) Light   |
-| :--------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
-| ![Street Neon](https://user-images.githubusercontent.com/55318172/152929924-cfc86c3b-1ab6-4ec3-b82c-56878447d027.png) Street | ![Monokai](https://user-images.githubusercontent.com/55318172/152929929-95df59d2-0690-4e4c-8a81-b75c86e4c289.png) Monokai |
-|    ![Milky](https://user-images.githubusercontent.com/55318172/152929918-632410ea-d6e0-4354-b7fe-08b2d991e2ab.png) Milky     |                                                                                                                           |
