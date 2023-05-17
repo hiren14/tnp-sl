@@ -1,0 +1,37 @@
+import { openGraph, trimHttps } from '@/lib/helper';
+
+describe('Open Graph function should work correctly', () => {
+  it('should not return templateTitle when not specified', () => {
+    const result = openGraph({
+      description: 'Test description',
+      siteName: 'Test site name',
+    });
+    expect(result).not.toContain('&templateTitle=');
+  });
+
+  it('should return templateTitle when specified', () => {
+    const result = openGraph({
+      templateTitle: 'Test Template Title',
+      description: 'Test description',
+      siteName: 'Test site name',
+    });
+    expect(result).toContain('&templateTitle=Test%20Template%20Title');
+  });
+});
+
+describe('trimHttps function should work correctly', () => {
+  it('should remove https:// from the beginning of the url', () => {
+    const result = trimHttps('https://test.com');
+    expect(result).toBe('test.com');
+  });
+
+  it('should remove http:// from the beginning of the url', () => {
+    const result = trimHttps('http://test.com');
+    expect(result).toBe('test.com');
+  });
+
+  it('should not remove anything from the beginning of the url', () => {
+    const result = trimHttps('test.com');
+    expect(result).toBe('test.com');
+  });
+});
